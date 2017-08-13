@@ -1,0 +1,26 @@
+<% include partials/header %>
+<% include partials/navbar %>
+
+<div class="container">
+<form class="form-inline forms" action="/campgrounds" method="POST">
+  <label class="sr-only" for="inlineFormInput">Name</label>
+  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="name" name="name">
+
+  <label class="sr-only" for="inlineFormInputGroup">Url</label>
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder=" Image Url" name="image">
+  </div>
+
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="description" name="description">
+    </div>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+</div>
+<a href="/campgrounds">view campgrounds</a>
+
+
+<% include partials/footer %>
